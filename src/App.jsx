@@ -1,18 +1,18 @@
-import { useState } from 'react'
-import './App.css'
+import { Container } from '@chakra-ui/react';
+
+import AdviceBox from './components/AdviceBox';
+import './assets/styles/App.scss';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-   
+    <Container m={2} >
+   <AdviceBox />
 
-   <div class="attribution">
+   <div className="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Zachary Campanelli</a>.
   </div>
-    </>
+    </Container>
   )
 }
 
