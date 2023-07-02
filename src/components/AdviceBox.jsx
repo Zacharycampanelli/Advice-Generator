@@ -3,7 +3,7 @@ import Advice from './Advice';
 import { useEffect, useState } from 'react';
 
 const AdviceBox = () => {
-    const [advice, setAdvice] = useState("");
+    const [adviceText, setAdviceText] = useState("");
     const [adviceId, setAdviceId] = useState(0);
 
   const url = 'https://api.adviceslip.com/advice';
@@ -14,13 +14,18 @@ const AdviceBox = () => {
         try {
             const response = await fetch(url);
             const json = await response.json();
-            console.log(json);
+
+            await setAdviceText(json.slip.advice);
+            await setAdviceId(json.slip.id)
         } catch (err) {
             console.log('Error: ', err);
         }
     };
-
+     
+    
     fetchAdvice();
+    console.log(adviceText)
+    console.log(adviceId)
 }, [])
 
   return (
@@ -35,7 +40,7 @@ const AdviceBox = () => {
         h="40vh"
         mt="25vh"
       >
-        <Advice />
+        <Advice adviceText={adviceText} adviceId={adviceId} />
         <Divider />
       </Flex>
     </div>

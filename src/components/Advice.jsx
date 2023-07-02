@@ -1,11 +1,12 @@
-const Advice = () => {
+const Advice = ({adviceText, adviceId}) => {
 
-  
+  console.log(adviceText);
+  console.log(adviceId)
 
   return (
     <div>
-        <p>ADVICE #117</p>
-        <h2 >“It is easy to sit up and take notice, what's difficult is getting up and taking action.”</h2>
+         <p>ADVICE # {adviceId}</p>
+        <h2 >{adviceText}</h2> 
     </div>
   )
 }
