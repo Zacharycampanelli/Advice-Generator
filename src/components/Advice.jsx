@@ -1,6 +1,4 @@
 const Advice = ({ adviceText, adviceId }) => {
-  console.log(adviceText);
-  console.log(adviceId);
 
   return (
     <div>

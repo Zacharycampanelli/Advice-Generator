@@ -2,10 +2,9 @@ import { useState } from 'react';
 import { Container } from '@chakra-ui/react';
 
 import AdviceBox from './components/AdviceBox';
-import './assets/styles/App.scss';
-
+// import './assets/styles/App.scss';
+import attribution from './assets/styles/attribution.css'
 function App() {
-
 
 
   return (

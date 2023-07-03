@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Image } from '@chakra-ui/react';
-import divider_mobile from '../assets/images/pattern-divider-mobile.svg';
-import divider_desktop from '../assets/images/pattern-divider-desktop.svg';
+import DividerMobile from '../assets/images/pattern-divider-mobile.svg';
+import DividerDesktop from '../assets/images/pattern-divider-desktop.svg';
 
 const Divider = () => {
 
@@ -21,15 +21,10 @@ const Divider = () => {
             window.removeEventListener('resize', handleWindowSize)
         }
       }, [])
-
-
-  let divider =windowSize[0] > 1440 ?  divider_desktop : divider_mobile;
- 
-  return (
+console.log(windowSize)
+      if (windowSize[0] < 1440) return <DividerMobile/> ;
+return <DividerDesktop/> ;
   
-  <Image src={divider} mt={4} />
-
-  );
 };
 
 export default Divider;

@@ -2,6 +2,7 @@ import { Flex } from '@chakra-ui/react';
 import Advice from './Advice';
 import Divider from './Divider';
 import { useEffect, useState } from 'react';
+import Button from './Button';
 
 const AdviceBox = () => {
     const [adviceText, setAdviceText] = useState("");
@@ -16,8 +17,8 @@ const AdviceBox = () => {
             const response = await fetch(url);
             const json = await response.json();
 
-            await setAdviceText(json.slip.advice);
-            await setAdviceId(json.slip.id)
+             setAdviceText(json.slip.advice);
+             setAdviceId(json.slip.id)
         } catch (err) {
             console.log('Error: ', err);
         }
@@ -36,11 +37,14 @@ const AdviceBox = () => {
         justifyContent="center"
         bg="darkGrayBlue"
         borderRadius="10px"
-        h="40vh"
+        h="max-content"
         mt="25vh"
+        py={10}
+        px={1}
       >
         <Advice adviceText={adviceText} adviceId={adviceId} />
         <Divider />
+        <Button />
       </Flex>
     </div>
   );
