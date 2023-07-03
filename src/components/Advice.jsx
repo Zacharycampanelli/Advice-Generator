@@ -1,7 +1,9 @@
+import { Flex } from "@chakra-ui/react";
+
 const Advice = ({ adviceText, adviceId }) => {
 
   return (
-    <div>
+    <Flex flexDirection='column' justifyContent='space-evenly' height='30vh' >
       <p>ADVICE # {adviceId}</p>
       <h2>
         {' '}
@@ -9,7 +11,7 @@ const Advice = ({ adviceText, adviceId }) => {
         {adviceText}
         &quot;
       </h2>
-    </div>
+    </Flex>
   );
 };
 

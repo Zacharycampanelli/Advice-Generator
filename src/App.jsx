@@ -8,7 +8,7 @@ function App() {
 
 
   return (
-    <Container p={2}>
+    <Container p={2} position="relative" height="auto">
       <AdviceBox />
 
       <div className="attribution">
