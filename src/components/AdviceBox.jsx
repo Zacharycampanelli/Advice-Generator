@@ -1,5 +1,6 @@
-import { Divider, Flex } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import Advice from './Advice';
+import Divider from './Divider';
 import { useEffect, useState } from 'react';
 
 const AdviceBox = () => {
@@ -24,8 +25,6 @@ const AdviceBox = () => {
      
     
     fetchAdvice();
-    console.log(adviceText)
-    console.log(adviceId)
 }, [])
 
   return (
