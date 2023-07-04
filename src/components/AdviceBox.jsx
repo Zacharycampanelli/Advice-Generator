@@ -10,8 +10,23 @@ const AdviceBox = () => {
 
   const url = 'https://api.adviceslip.com/advice';
 
-  useEffect(() => {
-    const fetchAdvice = async () => {
+  // useEffect(() => {
+  //   const fetchAdvice = async () => {
+  //     try {
+  //       const response = await fetch(url);
+  //       const json = await response.json();
+
+  //       setAdviceText(json.slip.advice);
+  //       setAdviceId(json.slip.id);
+  //     } catch (err) {
+  //       console.log('Error: ', err);
+  //     }
+  //   };
+
+  //   fetchAdvice();
+  // }, []);
+
+      const fetchAdvice = async () => {
       try {
         const response = await fetch(url);
         const json = await response.json();
@@ -22,9 +37,6 @@ const AdviceBox = () => {
         console.log('Error: ', err);
       }
     };
-
-    fetchAdvice();
-  }, []);
 
   return (
     <Flex
@@ -42,7 +54,7 @@ const AdviceBox = () => {
     >
       <Advice adviceText={adviceText} adviceId={adviceId} />
       <Divider />
-      <Button />
+      <Button fetchAdvice={fetchAdvice} />
     </Flex>
   );
 };
