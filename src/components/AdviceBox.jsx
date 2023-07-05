@@ -51,6 +51,7 @@ const AdviceBox = () => {
       py={10}
       px={10}
       pos="relative"
+      w={{sm: '100%', lg: '65vw'}}
     >
       <Advice adviceText={adviceText} adviceId={adviceId} />
       <Divider />

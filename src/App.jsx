@@ -8,8 +8,8 @@ function App() {
 
 
   return (
-    <Container p={2} position="relative" height="auto">
-      <AdviceBox />
+    <Container p={2} display="flex" position="relative" height="100vh" width="95vw" minWidth={{sm: '95vw', lg: '50vw'}}>
+      <AdviceBox w="65vw" />
 
       <div className="attribution">
         Challenge by{' '}
