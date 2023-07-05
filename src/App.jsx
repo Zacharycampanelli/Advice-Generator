@@ -8,7 +8,7 @@ function App() {
 
 
   return (
-    <Container p={2} display="flex" position="relative" height="100vh" width="95vw" minWidth={{sm: '95vw', lg: '50vw'}}>
+    <Container p={2} display="flex" alignSelf="center" position="relative" height="100vh" width="95vw" minWidth={{sm: '95vw', lg: '50vw'}}>
       <AdviceBox w="65vw" />
 
       <div className="attribution">

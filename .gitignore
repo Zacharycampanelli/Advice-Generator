@@ -25,5 +25,6 @@ dist-ssr
 *.fig
 *.xd
 
-.DS_Store
+
 .prettierignore
+node_modules

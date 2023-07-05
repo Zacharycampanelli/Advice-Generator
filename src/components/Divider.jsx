@@ -17,7 +17,7 @@ const Divider = () => {
     };
   }, []);
 
-  return <Box my={6} >{windowSize[0] < 1440 ? <DividerMobile /> : <DividerDesktop />}</Box>;
+  return <Box mb={8} >{windowSize[0] < 1440 ? <DividerMobile /> : <DividerDesktop />}</Box>;
 
 };
 

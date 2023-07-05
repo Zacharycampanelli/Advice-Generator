@@ -44,10 +44,10 @@ const AdviceBox = () => {
       flexDirection="column"
       alignItems="center"
       justifyContent="center"
+      alignSelf="center"
       bg="darkGrayBlue"
       borderRadius="10px"
       h="max-content"
-      mt="15vh"
       py={10}
       px={10}
       pos="relative"

@@ -17,13 +17,19 @@ const theme = extendTheme({
     styles: {
         global: {
             h2: {
-                fontSize: '24px',
-                color: 'lightCyan'
+                color: 'lightCyan',
+                fontSize: {
+                    sm: '24px',
+                    lg: '28px'
+                }
             },
             p: { 
-                fontSize: '11px',
                 color: 'neonGreen',
                 letterSpacing: '4px',
+                fontSize: {
+                   sm: '11px',
+                   lg: '13px'
+                } 
             },
 
             body: {bg: 'darkBlue'}
