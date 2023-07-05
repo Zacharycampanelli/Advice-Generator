@@ -32,9 +32,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [github.com/Zacharycampanelli/Notifications_Page](https://github.com/Zacharycampanelli/Notifications_Page)
+- Solution URL: [github.com/Zacharycampanelli/Advice-Generator](https://github.com/Zacharycampanelli/Advice-Generator)
 
-- Live Site URL: [main--zcamp-notifications-page.netlify.app](https://main--zcamp-notifications-page.netlify.app/)
+- Live Site URL: [campanelli-advice-generator.netlify.app](https://campanelli-advice-generator.netlify.app/)
 
 ## My process
 
