@@ -49,7 +49,7 @@ const AdviceBox = () => {
       h="max-content"
       mt="15vh"
       py={10}
-      px={1}
+      px={10}
       pos="relative"
     >
       <Advice adviceText={adviceText} adviceId={adviceId} />
